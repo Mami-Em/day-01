@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // tsy mila () intsony
+            document.querySelector('button').onclick = mitombo;
+            let counter = 0
+            function mitombo() {
+                counter++
+                document.querySelector('h1').innerHTML = counter
+            
+                // azo zaraina ve
+                if (counter % 132 === 0) {
+                    alert(`mahazo zaraina 2 ny ${counter}`)
+                }
+            }
+        });
+    </script>
+    <title>Function</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button>Apina</button>
+</body>
+</html>

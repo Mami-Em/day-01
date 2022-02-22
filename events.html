@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function miova() {  
+            const lohany = document.querySelector('#lohany')
+            if (lohany.innerHTML === 'maraina') {
+                lohany.innerHTML = 'atoandro'
+            }  else if (lohany.innerHTML === 'atoandro') {
+                lohany.innerHTML = 'ariva'
+            } else {
+                lohany.innerHTML = 'maraina'
+            }
+        };
+    </script>
+    <title>Events</title>
+</head>
+<body>
+    <h1 id="lohany">maraina</h1>
+    <button onclick="miova()">miova</button>
+</body>
+</html>
